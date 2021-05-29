@@ -15,8 +15,6 @@ namespace CardVaiVoa.Models
         public string NumberCard { get; set; }
         
         public int KeyId { get; set; }
-        //[ForeignKey("Users")]
-        //public int UserId { get; set; }
-        //public User User { get; set; }
+      
     }
 }

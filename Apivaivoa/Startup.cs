@@ -37,7 +37,7 @@ namespace CardVaiVoa
             services.AddTransient<UserCardRepositoy>();
             services.AddTransient<AssociateCard>();
 
-            services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Curso Api MVC", Version = "v1" }); });
+            services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api vaivoa", Version = "v1" }); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +49,7 @@ namespace CardVaiVoa
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Curso API MVC"); });
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api vaivoa"); });
 
             app.UseHttpsRedirection();
 
